@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class DarkModeServiceImpl implements DarkModeService {
 
-	private final Object lock1 = new Object();
-	private final Object lock2 = new Object();
+	// private final Object lock1 = new Object();
+	// private final Object lock2 = new Object();
 	
 	@Override
 	public void enableDarkMode() {
@@ -30,7 +30,8 @@ public class DarkModeServiceImpl implements DarkModeService {
 		
 		@Override
 		public void run() {
-			synchronized(lock1) {
+			// synchronized(lock1) 
+			{
 				logger.info("Enabling Dark Mode...");
 				try {
 					Thread.sleep(10);
@@ -39,7 +40,8 @@ public class DarkModeServiceImpl implements DarkModeService {
 				}
 				logger.info("Waiting for second lock...");
 				
-				synchronized(lock2) {
+				// synchronized(lock2) 
+				{
 					logger.info("Dark Mode Enabled");
 				}
 			}
@@ -52,7 +54,8 @@ public class DarkModeServiceImpl implements DarkModeService {
 		
 		@Override
 		public void run() {
-			synchronized(lock2) {
+			// synchronized(lock2) 
+			{
 				logger.info("Attempting to enable Dark Mode support...");
 				try {
 					Thread.sleep(10);
@@ -60,7 +63,8 @@ public class DarkModeServiceImpl implements DarkModeService {
 					
 				}
 				logger.info("Waiting for second lock...");
-				synchronized(lock1) {
+				// synchronized(lock1) 
+				{
 					logger.info("Dark Mode Enabled");
 				}
 			}

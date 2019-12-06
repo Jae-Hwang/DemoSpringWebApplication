@@ -1,0 +1,18 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,failureMessage,bytes,grpThreads,allThreads,Latency,SampleCount,ErrorCount,Hostname
+1575659506456,317,Load Login Page30 /,200,,Smoke Test 1-1,true,,71479,1,1,4,1,0,DESKTOP-NN5HOD2
+1575659506775,279,Load Login Page31 /login,200,,Smoke Test 1-1,true,,71496,1,1,3,1,0,DESKTOP-NN5HOD2
+1575659506415,596,[Load] Login Page /,200,"Number of samples in transaction : 2, number of failing samples : 0",Smoke Test 1-1,true,,142975,1,1,7,1,0,DESKTOP-NN5HOD2
+1575659507150,112,Load Registration Page34 /register,200,,Smoke Test 1-1,true,,29700,1,1,8,1,0,DESKTOP-NN5HOD2
+1575659507055,112,[Load] Registration Page /register,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,29700,1,1,8,1,0,DESKTOP-NN5HOD2
+1575659507327,378,[Action] Register /register,200,,Smoke Test 1-1,true,,71472,1,1,80,1,0,DESKTOP-NN5HOD2
+1575659507263,378,[Action] Register /register,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,71472,1,1,80,1,0,DESKTOP-NN5HOD2
+1575659508046,271,[Load] Create Todos /todos/create,200,,Smoke Test 1-1,true,,72162,1,1,2,1,0,DESKTOP-NN5HOD2
+1575659507978,271,[Load] Create Todos /todos/create,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,72162,1,1,2,1,0,DESKTOP-NN5HOD2
+1575659508529,296,[Load] Message Board /message,200,,Smoke Test 1-1,true,,110692,1,1,28,1,0,DESKTOP-NN5HOD2
+1575659508405,296,[Load] Message Board /message,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,110692,1,1,28,1,0,DESKTOP-NN5HOD2
+1575659509006,291,[Action] Create Message /message,200,,Smoke Test 1-1,true,,110908,1,1,19,1,0,DESKTOP-NN5HOD2
+1575659508825,291,[Action] Create Message /message,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,110908,1,1,19,1,0,DESKTOP-NN5HOD2
+1575659509298,283,[Redirect] Message Board after Create Message /message,200,,Smoke Test 1-1,true,,110884,1,1,12,1,0,DESKTOP-NN5HOD2
+1575659509297,283,[Redirect] Message Board after Create Message /message,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,110884,1,1,12,1,0,DESKTOP-NN5HOD2
+1575659510404,929,[Action] Sign Out /logout,200,,Smoke Test 1-1,true,,71472,1,1,6,1,0,DESKTOP-NN5HOD2
+1575659510335,929,[Action] Sign Out /logout,200,"Number of samples in transaction : 1, number of failing samples : 0",Smoke Test 1-1,true,,71472,1,1,6,1,0,DESKTOP-NN5HOD2

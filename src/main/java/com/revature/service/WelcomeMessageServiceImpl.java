@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 public class WelcomeMessageServiceImpl implements WelcomeMessageService {
 
 	private static final Integer LIST_SIZE = 1000;
-	private static final List<BufferedReader> readers = new ArrayList<>(LIST_SIZE);
+	// private static final List<BufferedReader> readers = new ArrayList<>(LIST_SIZE);
 	
 	@Override
 	public List<String> getWelcomeMessage() {
@@ -40,8 +40,7 @@ public class WelcomeMessageServiceImpl implements WelcomeMessageService {
 	
 	private static BufferedReader getReader() {
 		try {
-			readers.add(new BufferedReader(new FileReader(new File("src/main/resources/welcomeMessage.txt"))));
-			return readers.get(readers.size() - 1);
+			return new BufferedReader(new FileReader(new File("src/main/resources/welcomeMessage.txt")));
 		} catch (FileNotFoundException e) {
 			return null;
 		}
